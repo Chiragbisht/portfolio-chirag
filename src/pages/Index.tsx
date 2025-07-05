@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from "react";
+import ShootingStarsAndStarsBackgroundDemo from "@/components/shooting-stars-and-stars-background-demo";
+import SparklesPreview from "@/components/sparkles-demo";
+import ProfileCard from "@/components/profile-card";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      {/* Landing Section with Shooting Stars */}
+      <section id="hero" className="h-screen">
+        <ShootingStarsAndStarsBackgroundDemo />
+      </section>
+
+      {/* Sparkles Section */}
+      <section id="sparkles" className="h-[40rem]">
+        <SparklesPreview />
+      </section>
+
+      {/* Profile Card Section */}
+      <section id="profile" className="min-h-screen bg-gray-50 flex items-center justify-center py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Get to know more about my background, skills, and passion for development.
+            </p>
+          </div>
+          <ProfileCard />
+        </div>
+      </section>
     </div>
   );
 };

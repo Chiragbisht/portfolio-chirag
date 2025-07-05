@@ -4,6 +4,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { SparklesCore } from "@/components/ui/sparkles";
 import ProfileCard from "@/components/profile-card";
+import SkillsDock from "@/components/skills-dock";
 
 const Index = () => {
   return (
@@ -33,8 +34,11 @@ const Index = () => {
       </section>
 
       {/* Profile Card Section */}
-      <section id="profile" className="min-h-screen flex items-center justify-start py-20 relative z-10 pl-10 md:pl-20">
-        <div className="container mx-auto px-4">
+      <section id="profile" className="min-h-screen flex flex-col items-center justify-center py-20 relative z-10">
+        {/* Skills Dock positioned above profile card */}
+        <SkillsDock />
+        
+        <div className="container mx-auto px-4 flex items-center justify-start pl-10 md:pl-20">
           <ProfileCard
             name="Chirag Bisht"
             title="Full Stack Developer"

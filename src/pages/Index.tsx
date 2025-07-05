@@ -14,9 +14,9 @@ const Index = () => {
       
       {/* Hero Section */}
       <section id="hero" className="h-screen flex flex-col items-center justify-center text-white px-4 text-center relative z-10">
-        <h1 className="text-5xl md:text-8xl font-extrabold mb-8 text-white">CHIRAG BISHT</h1>
+        <h1 className="text-5xl md:text-8xl font-extrabold mb-4 text-white bg-gradient-to-b from-white to-gray-800 bg-clip-text text-transparent">CHIRAG BISHT</h1>
         
-        {/* Sparkles effect with gradient lines like first image */}
+        {/* Sparkles effect with gradient lines - reduced gap */}
         <div className="relative w-[40rem] h-40 max-w-full">
           <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4 blur-sm" />
           <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />

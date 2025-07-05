@@ -1,21 +1,25 @@
 
 import React from "react";
 import { StarsBackground } from "@/components/ui/stars-background";
+import { ShootingStars } from "@/components/ui/shooting-stars";
 import { SparklesCore } from "@/components/ui/sparkles";
 import ProfileCard from "@/components/profile-card";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-neutral-900 relative">
+    <div className="min-h-screen bg-neutral-900 relative overflow-x-hidden">
       {/* Twinkling stars background for entire site */}
       <StarsBackground />
+      <ShootingStars />
       
       {/* Hero Section */}
       <section id="hero" className="h-screen flex flex-col items-center justify-center text-white px-4 text-center relative z-10">
-        <h1 className="text-5xl md:text-8xl font-extrabold mb-8">CHIRAG BISHT</h1>
+        <h1 className="text-5xl md:text-8xl font-extrabold mb-8 text-white">CHIRAG BISHT</h1>
         
-        {/* Sparkles effect right below the name */}
-        <div className="relative w-[40rem] h-32 max-w-full">
+        {/* Sparkles effect with gradient lines like first image */}
+        <div className="relative w-[40rem] h-40 max-w-full">
+          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4 blur-sm" />
+          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
           <SparklesCore
             background="transparent"
             minSize={0.4}
@@ -24,19 +28,20 @@ const Index = () => {
             className="w-full h-full"
             particleColor="#FFFFFF"
           />
+          <div className="absolute inset-0 w-full h-full bg-neutral-900 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
         </div>
       </section>
 
       {/* Profile Card Section */}
-      <section id="profile" className="min-h-screen flex items-center justify-center py-20 relative z-10">
-        <div className="container mx-auto px-4 flex justify-center">
+      <section id="profile" className="min-h-screen flex items-center justify-start py-20 relative z-10 pl-10 md:pl-20">
+        <div className="container mx-auto px-4">
           <ProfileCard
             name="Chirag Bisht"
             title="Full Stack Developer"
             handle="chiragbisht"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="/placeholder.svg"
+            avatarUrl="/lovable-uploads/f713cdee-d0b7-4c10-956e-b156cd81dd46.png"
             showUserInfo={true}
             enableTilt={true}
             onContactClick={() => console.log('Contact clicked')}

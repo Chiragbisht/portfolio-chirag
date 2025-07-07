@@ -1,4 +1,3 @@
-
 import React from "react";
 import { StarsBackground } from "@/components/ui/stars-background";
 import { ShootingStars } from "@/components/ui/shooting-stars";
@@ -9,6 +8,14 @@ import SkillsDock from "@/components/skills-dock";
 const Index = () => {
   return (
     <div className="min-h-screen bg-neutral-900 relative overflow-x-hidden">
+      <a
+        href="https://drive.google.com/file/d/1rvr8R6B8M1w6zCFfHJyMN6fmqFk5TfXQ/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute top-6 right-8 text-white underline font-extrabold z-20 text-lg"
+      >
+        Resume
+      </a>
       {/* Twinkling stars background for entire site */}
       <StarsBackground />
       <ShootingStars />
@@ -44,7 +51,6 @@ const Index = () => {
             title="Full Stack Developer"
             handle="chiragbisht"
             status="Online"
-            contactText="Contact Me"
             avatarUrl="/lovable-uploads/f713cdee-d0b7-4c10-956e-b156cd81dd46.png"
             showUserInfo={true}
             enableTilt={true}

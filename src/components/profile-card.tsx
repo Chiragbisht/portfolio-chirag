@@ -54,17 +54,17 @@ const defaultProjects: ProjectData[] = [
   },
   {
     id: 2,
-    title: "Humanizer",
-    description: "AI-powered text humanizer",
+    title: "Chatroom",
+    description: "Real-time chat application",
     image: "/assets/Screenshot from 2025-07-05 13-34-26.png",
-    link: "https://humanizer-olive.vercel.app/"
+    link: "https://chatroom-os4ddry5.b4a.run/"
   },
   {
     id: 3,
-    title: "Chatroom",
-    description: "Real-time chat application",
+    title: "Humanizer",
+    description: "AI-powered text humanizer",
     image: "/assets/Screenshot from 2025-07-05 13-38-21.png",
-    link: "https://chatroom-os4ddry5.b4a.run/"
+    link: "https://humanizer-olive.vercel.app/"
   }
 ];
 
